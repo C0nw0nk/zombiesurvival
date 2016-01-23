@@ -199,8 +199,11 @@ function ENT:AltUse(activator, tr)
 end
 
 function ENT:OnPackedUp(pl)
-	pl:GiveEmptyWeapon("weapon_zs_gunturret")
-	pl:GiveAmmo(1, "thumper")
+	if pl:HasWeapon("weapon_zs_gunturret") then
+		pl:GiveAmmo(1, "thumper")
+	else
+		pl:Give("weapon_zs_gunturret")
+	end
 
 	pl:PushPackedItem(self:GetClass(), self:GetObjectHealth())
 	pl:GiveAmmo(self:GetAmmo(), "smg1")
