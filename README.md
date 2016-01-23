@@ -11,7 +11,7 @@ This is the latest version of Zombie Survival that was released of Jteboom's Git
 
 ##Fixes :
 
-Fixed glitched weapon pickups.
+Fixed glitched weapon / ammo pickups.
 
 Fire rates spamming reload or clicking extremely fast allows you to fire faster than intended. (With external programs such as autohotkey and pistols you could unload a entire clip in less than a second.)
 
