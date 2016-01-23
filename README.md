@@ -9,7 +9,7 @@ This is the latest version of Zombie Survival that was released of Jteboom's Git
 
 #Fixes and added Features :
 
-Fixes :
+##Fixes :
 
 Fixed glitched weapon pickups.
 
@@ -52,7 +52,7 @@ Fixed Zombie Vision.
 Fixed humans not being able to phase out of props they are stuck in or ontop of.
 
 
-Additions :
+##Additions :
 
 Added health bar to Arsenal Crate.
 
@@ -65,7 +65,7 @@ During intermission display to living zombies who will be next boss.
 Added JetBoom's HitBox fix. https://github.com/C0nw0nk/zombiesurvival/pull/1/files
 
 
-Removed :
+##Removed :
 
 Removed the draw written inside Resupply box that says "ur a faget".
 
