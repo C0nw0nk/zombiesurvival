@@ -64,15 +64,13 @@ During intermission display to living zombies who will be next boss.
 
 Added JetBoom's HitBox fix. https://github.com/C0nw0nk/zombiesurvival/pull/1/files
 
+For more additional features see my external hook's.
+
+https://github.com/C0nw0nk/Garrys-Mod-Zombie-Survival
 
 ##Removed :
 
 Removed the draw written inside Resupply box that says "ur a faget".
-
-
-For more features see my external hook's.
-
-https://github.com/C0nw0nk/Garrys-Mod-Zombie-Survival
 
 # How to install
 
