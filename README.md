@@ -13,6 +13,12 @@ This is the latest version of Zombie Survival that was released of Jteboom's Git
 
 Fixed glitched weapon / ammo pickups.
 
+Fixed building of Flesh Creeper nests.
+
+Fixed Zombie Vision.
+
+Fixed humans not being able to phase out of props they are stuck in or ontop of.
+
 Fire rates spamming reload or clicking extremely fast allows you to fire faster than intended. (With external programs such as autohotkey and pistols you could unload a entire clip in less than a second.)
 
 Blaster shotgun fire rate glitching.
@@ -44,13 +50,6 @@ Redeemers fire rate.
 Waraxe pistol fire rate.
 
 Pulse pistol (z9000) fire rate.
-
-Fixed building of Flesh Creeper nests.
-
-Fixed Zombie Vision.
-
-Fixed humans not being able to phase out of props they are stuck in or ontop of.
-
 
 ##Additions :
 
