@@ -390,6 +390,12 @@ function GM:Move(pl, move)
 end
 
 function GM:OnPlayerHitGround(pl, inwater, hitfloater, speed)
+	--Start Anti Bhop
+	if SERVER then
+		pl:SetVelocity(- pl:GetVelocity() / 2)
+	end
+	--End Anti Bunny Hopping
+		
 	if inwater then return true end
 
 	local isundead = pl:Team() == TEAM_UNDEAD
