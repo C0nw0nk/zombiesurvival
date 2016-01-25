@@ -73,8 +73,18 @@ https://github.com/C0nw0nk/Garrys-Mod-Zombie-Survival
 
 Removed the draw written inside Resupply box that says "ur a faget".
 
-# How to install
+# How to install :
 
 Install the addon to the `"/garrysmod/gamemodes/"` folder.
 
 The path to should look like this : `"/garrysmod/gamemodes/zombiesurvival/"`
+
+# How to use :
+
+For those who intend on running public game servers you must also add to your servers command line the following.
+
+`+gamemode zombiesurvival`
+
+In full your command line should be similar to this.
+
+`srcds.exe -console -game garrysmod +gamemode zombiesurvival +map zs_map_name`
