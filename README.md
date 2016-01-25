@@ -17,6 +17,8 @@ Fixed building of Flesh Creeper nests.
 
 Fixed Zombie Vision.
 
+Anti Bunny Hopping fix. (When player touches ground take away and divide their velocity by two (in half).)
+
 Fixed humans not being able to phase out of props they are stuck in or ontop of.
 
 Fire rates spamming reload or clicking extremely fast allows you to fire faster than intended. (With external programs such as autohotkey and pistols you could unload a entire clip in less than a second.)
