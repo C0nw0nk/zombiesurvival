@@ -88,3 +88,20 @@ For those who intend on running public game servers you must also add to your se
 In full your command line should be similar to this.
 
 `srcds.exe -console -game garrysmod +gamemode zombiesurvival +map zs_map_name`
+
+# Secure your Server :
+
+Nobody likes playing with cheaters so in order to prevent the cheating and hacking that revolves highly around the ZS game mode you should apply / consider running the following.
+
+A Anti-Cheat : https://scriptfodder.com/scripts/view/460
+
+To your servers command line add the following.
+
+`+sv_pure 1` This will allow clients to only use models and files the server provides them with nothing modified or custom they have put into their folders. Because of the moronic confusion going on over the sv_pure command if you have custom models, sounds etc server side for the client to download and use then yes those will still work fine. Its a whitelist for server sided files if it does not exist on the server then the client is not allowed to use it simple.
+In a nut shell sv_pure 1 enforces only what is in the models sounds etc server folders for the client to be able to use. If the client has extra files that do not match with the server they can't use them. (Prevents wallhacks etc.)
+
+Should look like this : `srcds.exe -console -game garrysmod +gamemode zombiesurvival +sv_pure 1`
+
+Disable clients from executing client side lua files : `+sv_allowcslua 0`
+
+Should look like this : `srcds.exe -console -game garrysmod +gamemode zombiesurvival +sv_allowcslua 0`
