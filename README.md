@@ -106,6 +106,8 @@ Disable clients from executing client side lua files : `+sv_allowcslua 0`
 
 Should look like this : `srcds.exe -console -game garrysmod +gamemode zombiesurvival +sv_allowcslua 0`
 
+Merge both the commands above your command line should be similar to this : `srcds.exe -console -game garrysmod +gamemode zombiesurvival +sv_pure 1 +sv_allowcslua 0`
+
 Disable RCON weak RCON passwords or people guessing / bruteforcing or even dictionary attacking as well as other methods are a key flaw in servers you should disable RCON to not allow anyone to execute server sided commands via their client ingame console.
 
 Setting the password to empty will disable RCON `rcon_password ""`
