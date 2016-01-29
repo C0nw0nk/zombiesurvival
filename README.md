@@ -151,6 +151,10 @@ location /download-path/ {
   if ($http_user_agent != "Half-Life 2") {
     return 444;
   }
+  # Take into consideration blank / empty referers that are set to none.
+  if ($http_referer = "^$") {
+    set $allowthis 1;
+  }
   
   # First Server.
   if ($http_referer = "hl2://1.2.3.4:27015") {
