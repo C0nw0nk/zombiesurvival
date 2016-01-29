@@ -118,7 +118,7 @@ An Admin addon to moderate and punish players my recommendation is ULX because i
 
 Prevent players bypassing bans using Steam's family sharing features or throwing their money at Garry to buy the game over and over to troll your server : https://github.com/C0nw0nk/Garrys-Mod-Family-Sharing
 
-# Secure Your Fast Downloads (FastDL) :
+# Secure Your Fast Downloads (FastDL sv_downloadurl) :
 
 Nobody likes content scrappers, leechers nor people who hotlink of your servers fast download path consuming your money / bandwidth so here is the soloution.
 
