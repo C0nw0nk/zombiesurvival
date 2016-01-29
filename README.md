@@ -117,3 +117,55 @@ Prevent Clients uploading custom files to the server `sv_allowupload 0` there ha
 An Admin addon to moderate and punish players my recommendation is ULX because it is the most popular and reliable as well as updated and maintained : http://ulyssesmod.net/downloads.php
 
 Prevent players bypassing bans using Steam's family sharing features or throwing their money at Garry to buy the game over and over to troll your server : https://github.com/C0nw0nk/Garrys-Mod-Family-Sharing
+
+# Secure Your Fast Downloads (FastDL) :
+
+Nobody likes content scrappers, leechers nor people who hotlink of your servers fast download path consuming your money / bandwidth so here is the soloution.
+
+##### Apache (.htaccess) :
+```
+# Check the user agent is Half Life 2.
+SetEnvIfNoCase User-Agent "^Half-Life 2$" is_hl2
+# Take into consideration blank / empty referers that are set to none.
+SetEnvIf Referer "^$" valid_ref
+
+# First server.
+SetEnvIfNoCase Referer "^hl2:\/\/1\.2\.3\.4:27015$" valid_ref
+# Second server.
+SetEnvIfNoCase Referer "^hl2:\/\/1\.2\.3\.4:27016$" valid_ref
+
+<RequireAll>
+        Require env is_hl2
+        Require env valid_ref
+</RequireAll>
+
+# Disable the directory indexing so we do not display to everyone the contents of the folder.
+Options -Indexes
+```
+
+##### Nginx (location config) :
+```
+location /download-path/ {
+  set $allowthis 0;
+  # Check the user agent is Half Life 2.
+  if ($http_user_agent != "Half-Life 2") {
+    return 444;
+  }
+  
+  # First Server.
+  if ($http_referer = "hl2://1.2.3.4:27015") {
+    set $allowthis 1;
+  }
+  # Second Server.
+  if ($http_referer = "hl2://1.2.3.4:27016") {
+    set $allowthis 1;
+  }
+
+  if ($allowthis = 0) {
+    return 444;
+  }
+  
+  # Disable the directory indexing in nginx this is off by default but just to be sure we set it here.
+  autoindex off;
+}
+```
