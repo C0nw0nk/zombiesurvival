@@ -89,6 +89,54 @@ In full your command line should be similar to this.
 
 `srcds.exe -console -game garrysmod +gamemode zombiesurvival +map zs_map_name`
 
+#### Crashes and Logs :
+
+##### Logs :
+
+To enable logging to see what players get upto ingame and also what they say or talk about on the server and to help you administrate your server to confirm that players have been breaking rules abusive, trolling etc.
+
+In the following directory :
+
+`"/garrysmod/cfg/"`
+
+You should add to your server config file `server.cfg`
+
+```
+logging on //Enable logging.
+sv_logbans      1 //Log server bans in the server logs.
+sv_logecho      1 //Echo log information to the console.
+sv_logfile      1 //Log server information in the log file.
+```
+
+The logs will end up in the following directory `"/garrysmod/logs/"`
+
+##### Crashes :
+
+As we all know Garry's Mod can be unstabble and crash for no reason as well as suffer from memory leaks etc, The way we can ensure our server has the maximum amount of uptime is to add the following to our servers launch command line.
+
+`-nocrashdialog` will help to prevent a dialog box asking you to close or send a error report that the server has crashed without this our server would hang and not automaticly start backup. (This depend sif you have a script to automaticly restart your server when it crashes.)
+
+`-nocrashdialog`
+
+In full your command line should be similar to this.
+
+`srcds.exe -nocrashdialog -console -game garrysmod +gamemode zombiesurvival +map zs_map_name`
+
+###### Windows Crash issue :
+
+On Windows servers when your server crashes you may recieve one of the following error messages / displays.
+
+```
+"srcds.exe has stopped working. Windows can check online for a solution to the problem"
+"srcds.exe has stopped working. A problem caused the program to stop working correctly. Please close the program"
+```
+
+In order to suppress these application hung/error messages completely you need to modify the system registry. The easyest way to do this is to Open a command prompt window (CMD) Make sure you Run As Administrator and execute the following to modify the registry to not display these error messages.
+
+```
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Windows" /v ErrorMode /t REG_DWORD /d 2 /f
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\Windows Error Reporting" /v DontShowUI /t REG_DWORD /d 1 /f
+```
 # Secure your Server :
 
 Nobody likes playing with cheaters so in order to prevent the cheating and hacking that revolves highly around the ZS game mode you should apply / consider running the following.
@@ -148,7 +196,7 @@ Options -Indexes
 location /download-path/ {
   set $allowthis 0;
   # Check the user agent is Half Life 2.
-  if ($http_user_agent != "Half-Life 2") {
+  if ($http_user_agent != "^Half-Life 2$") {
     return 444;
   }
   # Take into consideration blank / empty referers that are set to none.
