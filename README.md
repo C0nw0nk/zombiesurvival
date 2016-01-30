@@ -114,7 +114,7 @@ The logs will end up in the following directory `"/garrysmod/logs/"`
 
 As we all know Garry's Mod can be unstabble and crash for no reason as well as suffer from memory leaks etc, The way we can ensure our server has the maximum amount of uptime is to add the following to our servers launch command line.
 
-`-nocrashdialog` will help to prevent a dialog box asking you to close or send a error report that the server has crashed without this our server would hang and not automaticly start backup. (This depend sif you have a script to automaticly restart your server when it crashes.)
+`-nocrashdialog` will help to prevent a dialog box asking you to close or send a error report that the server has crashed without this our server would hang and not automaticly start backup. (This depends if you have a script to automaticly restart your server when it crashes.)
 
 `-nocrashdialog`
 
