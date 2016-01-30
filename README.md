@@ -205,11 +205,11 @@ location /download-path/ {
   }
   
   # First Server.
-  if ($http_referer = "hl2://1.2.3.4:27015") {
+  if ($http_referer = "^hl2://1.2.3.4:27015$") {
     set $allowthis 1;
   }
   # Second Server.
-  if ($http_referer = "hl2://1.2.3.4:27016") {
+  if ($http_referer = "^hl2://1.2.3.4:27016$") {
     set $allowthis 1;
   }
 
