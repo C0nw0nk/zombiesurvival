@@ -137,6 +137,24 @@ In order to suppress these application hung/error messages completely you need t
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Windows" /v ErrorMode /t REG_DWORD /d 2 /f
 reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\Windows Error Reporting" /v DontShowUI /t REG_DWORD /d 1 /f
 ```
+
+To auto restart your server on windows in the event of a crash you need to create a .bat/.cmd script here is a example.
+
+Save it as : `server1.cmd`
+
+```
+@echo off
+cls
+echo Protecting srcds from crashes...
+echo If you want to close srcds and this script, close the srcds window and type Y depending on your language followed by Enter.
+title server1
+:srcds
+echo (%time%) srcds started.
+start /wait /high C:\path-to-server\srcds.exe -nocrashdialog -console -game garrysmod +gamemode zombiesurvival +map zs_map_name
+echo (%time%) WARNING: srcds closed or crashed, restarting.
+goto srcds
+```
+
 # Secure your Server :
 
 Nobody likes playing with cheaters so in order to prevent the cheating and hacking that revolves highly around the ZS game mode you should apply / consider running the following.
