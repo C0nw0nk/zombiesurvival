@@ -186,7 +186,7 @@ Prevent players bypassing bans using Steam's family sharing features or throwing
 
 # Secure Your Fast Downloads (FastDL sv_downloadurl) :
 
-Nobody likes content scrappers, leechers nor people who hotlink of your servers fast download path consuming your money / bandwidth so here is the soloution.
+Nobody likes content scrapers, leechers nor people who hotlink of your servers fast download path consuming your money / bandwidth so here is the soloution.
 
 ##### Apache (.htaccess) :
 ```
