@@ -63,7 +63,7 @@ Added name and health bar to Spotlamp.
 
 During intermission display to living zombies who will be next boss.
 
-Added JetBoom's HitBox fix. https://github.com/C0nw0nk/zombiesurvival/pull/1/files
+Added JetBoom's HitBox fix.
 
 For more additional features see my external hook's.
 
@@ -71,7 +71,7 @@ https://github.com/C0nw0nk/Garrys-Mod-Zombie-Survival
 
 ##Removed :
 
-Removed the draw written inside Resupply box that says "ur a faget".
+To remove the draw written inside Resupply box that says "ur a faget" edit the following. https://github.com/C0nw0nk/zombiesurvival/blob/master/gamemodes/zombiesurvival/entities/entities/prop_resupplybox/cl_init.lua#L83
 
 # How to install :
 
@@ -161,7 +161,7 @@ Nobody likes playing with cheaters so in order to prevent the cheating and hacki
 
 A Anti-Cheat : https://scriptfodder.com/scripts/view/460
 
-To your servers command line add the following.
+To your servers command line add the following. (`sv_pure` has to be in the command line or else it will not work. Do not put it inside the `server.cfg`)
 
 `+sv_pure 1` This will allow clients to only use models and files the server provides them with nothing modified or custom they have put into their folders. Because of the moronic confusion going on over the sv_pure command if you have custom models, sounds etc server side for the client to download and use then yes those will still work fine. Its a whitelist for server sided files if it does not exist on the server then the client is not allowed to use it simple.
 In a nut shell sv_pure 1 enforces only what is in the models sounds etc server folders for the client to be able to use. If the client has extra files that do not match with the server they can't use them. (Prevents wallhacks etc.)
