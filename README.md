@@ -11,6 +11,8 @@ There are no other changes that will be different than the ones listed below.
 
 ##Fixes :
 
+Fixed holding rotation of props to be centered.
+
 Fixed glitched weapon / ammo pickups.
 
 Fixed building of Flesh Creeper nests.
