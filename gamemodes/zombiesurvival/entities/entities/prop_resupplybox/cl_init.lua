@@ -61,7 +61,7 @@ function ENT:RenderInfo(pos, ang, owner)
 		--end
 		
 		if owner:IsValid() and owner:IsPlayer() then
-			draw.SimpleText("("..owner:ClippedName()..")", "ZS3D2DFont2Small", 0, 40, owner == MySelf and COLOR_BLUE or COLOR_GRAY, TEXT_ALIGN_CENTER, TEXT_ALIGN_BOTTOM)
+			draw.SimpleText("("..owner:ClippedName()..")", "ZS3D2DFont2Small", 0, 40, owner == MySelf and COLOR_BLUE or COLOR_GRAY, TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP)
 		end
 
 	cam.End3D2D()
