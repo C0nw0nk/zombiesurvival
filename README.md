@@ -67,11 +67,15 @@ During intermission display to living zombies who will be next boss.
 
 Added JetBoom's HitBox fix.
 
-For more additional features see my external hook's.
+##### For more additional features see my external hook's :
 
 https://github.com/C0nw0nk/Garrys-Mod-Zombie-Survival
 
+<a href="https://github.com/C0nw0nk/gmod-mapvote"><img src="http://i.imgur.com/S1tSwyI.jpg" height="250"></a>
+
 For a Map voting addon check this out : https://github.com/C0nw0nk/gmod-mapvote
+
+<a href="https://github.com/C0nw0nk/hitnumbers"><img src="http://images.akamai.steamusercontent.com/ugc/577849023630942742/5CD9AFB6F6C0EF79EC0C302E6DBAE8AF859DE9F6/" height="250"></a>
 
 For a damage indicator addon https://github.com/C0nw0nk/hitnumbers (This will help you indentify if you actualy hit a prop and damaged it or a human when zombie.)
 
