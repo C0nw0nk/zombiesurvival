@@ -73,6 +73,8 @@ https://github.com/C0nw0nk/Garrys-Mod-Zombie-Survival
 
 For a Map voting addon check this out : https://github.com/C0nw0nk/gmod-mapvote
 
+For a damage indicator addon https://github.com/C0nw0nk/hitnumbers (This will help you indentify if you actualy hit a prop and damaged it or a human when zombie.)
+
 ##Removed :
 
 To remove the draw written inside Resupply box that says "ur a faget" edit the following. https://github.com/C0nw0nk/zombiesurvival/blob/master/gamemodes/zombiesurvival/entities/entities/prop_resupplybox/cl_init.lua#L83
