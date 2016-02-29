@@ -71,6 +71,8 @@ For more additional features see my external hook's.
 
 https://github.com/C0nw0nk/Garrys-Mod-Zombie-Survival
 
+For a Map voting addon check this out : https://github.com/C0nw0nk/gmod-mapvote
+
 ##Removed :
 
 To remove the draw written inside Resupply box that says "ur a faget" edit the following. https://github.com/C0nw0nk/zombiesurvival/blob/master/gamemodes/zombiesurvival/entities/entities/prop_resupplybox/cl_init.lua#L83
