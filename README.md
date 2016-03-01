@@ -73,7 +73,7 @@ https://github.com/C0nw0nk/Garrys-Mod-Zombie-Survival
 
 <a href="https://github.com/C0nw0nk/gmod-mapvote"><img src="http://i.imgur.com/S1tSwyI.jpg" height="250"></a>
 
-For a Map voting addon check this out : https://github.com/C0nw0nk/gmod-mapvote
+For a Map voting addon that supports Zombie Survival check this out : https://github.com/C0nw0nk/gmod-mapvote
 
 <a href="https://github.com/C0nw0nk/hitnumbers"><img src="http://images.akamai.steamusercontent.com/ugc/577849023630942742/5CD9AFB6F6C0EF79EC0C302E6DBAE8AF859DE9F6/" height="250"></a>
 
