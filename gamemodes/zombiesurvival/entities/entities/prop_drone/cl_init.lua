@@ -73,12 +73,12 @@ function ENT:DrawTranslucent()
 		ang:RotateAroundAxis(ang:Up(), 270)
 		ang:RotateAroundAxis(ang:Forward(), 90)
 		cam.Start3D2D(self:LocalToWorld(Vector(0, 0, 26)), ang, 0.025)
-			draw.SimpleTextBlurry(owner:Name(), "ZS3D2DFont", 0, 0, color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP)
+			draw.SimpleTextBlurry(owner:Name(), "ZS3D2DFont", 0, 0, color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_BOTTOM)
 			local perc = math.Clamp(self:GetObjectHealth() / self:GetMaxObjectHealth(), 0, 1)
 			colHealth.r = 255
 			colHealth.g = perc ^ 0.3 * 255
 			colHealth.b = perc * 255
-			draw.SimpleTextBlurry(math.ceil(perc * 100), "ZS3D2DFontBig", 0, 0, colHealth, TEXT_ALIGN_CENTER, TEXT_ALIGN_BOTTOM)
+			draw.SimpleTextBlurry(math.ceil(perc * 100), "ZS3D2DFontBig", 0, 0, colHealth, TEXT_ALIGN_CENTER, TEXT_ALIGN_TOP)
 		cam.End3D2D()
 	end
 
