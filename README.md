@@ -11,7 +11,7 @@ There are no other changes that will be different than the ones listed below.
 
 ##Fixes :
 
-Fixed holding rotation of props to be centered.
+Fixed holding rotation of props to be centered. (For those who love cading and struggle rotating door's yes it is fixed.)
 
 Fixed glitched weapon / ammo pickups.
 
