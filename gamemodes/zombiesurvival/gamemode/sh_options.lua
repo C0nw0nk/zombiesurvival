@@ -321,7 +321,7 @@ cvars.AddChangeCallback("zs_redeem", function(cvar, oldvalue, newvalue)
 	GAMEMODE.DefaultRedeem = math.max(0, tonumber(newvalue) or 0)
 end)
 
-GM.WaveOneZombies = math.ceil(100 * CreateConVar("zs_waveonezombies", "0.1", FCVAR_REPLICATED + FCVAR_ARCHIVE + FCVAR_NOTIFY, "The percentage of players that will start as zombies when the game begins."):GetFloat()) * 0.01
+GM.WaveOneZombies = math.ceil(100 * CreateConVar("zs_waveonezombies", "0.25", FCVAR_REPLICATED + FCVAR_ARCHIVE + FCVAR_NOTIFY, "The percentage of players that will start as zombies when the game begins."):GetFloat()) * 0.01
 cvars.AddChangeCallback("zs_waveonezombies", function(cvar, oldvalue, newvalue)
 	GAMEMODE.WaveOneZombies = math.ceil(100 * (tonumber(newvalue) or 1)) * 0.01
 end)
