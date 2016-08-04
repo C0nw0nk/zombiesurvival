@@ -224,7 +224,7 @@ Options -Indexes
 location /download-path/ {
   set $allowthis 0;
   # Check the user agent is Half Life 2.
-  if ($http_user_agent != "^Half-Life 2$") {
+  if ($http_user_agent !~ "^Half-Life 2$") {
     return 444;
   }
   # Take into consideration blank / empty referers that are set to none.
