@@ -7,9 +7,9 @@ Version number as stated inside Jetboom's LICENSE file : `"VERSION Xx420xX3, 19 
 There are no other changes that will be different than the ones listed below.
 
 
-#Fixes and added Features :
+# Fixes and added Features :
 
-##Fixes :
+## Fixes :
 
 Fixed holding rotation of props to be centered. (For those who love cading and struggle rotating door's yes it is fixed.)
 
@@ -55,7 +55,7 @@ Waraxe pistol fire rate.
 
 Pulse pistol (z9000) fire rate.
 
-##Additions :
+## Additions :
 
 Added health bar to Arsenal Crate.
 
@@ -79,7 +79,7 @@ For a Map voting addon that supports Zombie Survival check this out : https://gi
 
 For a damage indicator addon https://github.com/C0nw0nk/hitnumbers (This will help you indentify if you actualy hit a prop and damaged it or a human when zombie.)
 
-##Removed :
+## Removed :
 
 To remove the draw written inside Resupply box that says "ur a faget" edit the following. https://github.com/C0nw0nk/zombiesurvival/blob/master/gamemodes/zombiesurvival/entities/entities/prop_resupplybox/cl_init.lua#L83
 
