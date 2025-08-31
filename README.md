@@ -79,6 +79,8 @@ For a Map voting addon that supports Zombie Survival check this out : https://gi
 
 For a damage indicator addon https://github.com/C0nw0nk/hitnumbers (This will help you indentify if you actualy hit a prop and damaged it or a human when zombie.)
 
+[Zombie Survival MAPS](https://steamcommunity.com/workshop/browse/?appid=4000&searchtext=zs_&childpublishedfileid=0&browsesort=textsearch&section=readytouseitems&created_date_range_filter_start=0&created_date_range_filter_end=0&updated_date_range_filter_start=0&updated_date_range_filter_end=0)
+
 ## Removed :
 
 To remove the draw written inside Resupply box that says "ur a faget" edit the following. https://github.com/C0nw0nk/zombiesurvival/blob/master/gamemodes/zombiesurvival/entities/entities/prop_resupplybox/cl_init.lua#L83
