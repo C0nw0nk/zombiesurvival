@@ -80,7 +80,7 @@ function ENT:Draw()
 
 	cam.Start3D2D(self:LocalToWorld(vOffsetEE), ang, 0.01)
 
-		draw.SimpleText(""..MySelf:Nick().." is a faget", "ZS3D2DFont2", 0, 0, color_white, TEXT_ALIGN_CENTER)
+		draw.SimpleText(""..MySelf:Nick().." is beautiful ", "ZS3D2DFont2", 0, 0, color_white, TEXT_ALIGN_CENTER)
 
 	cam.End3D2D()
 end
